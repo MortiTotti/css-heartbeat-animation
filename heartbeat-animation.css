@@ -1,0 +1,64 @@
+/* --  square-to-circle
+@keyframes square-to-circle {
+	0% {
+		border-radius:0 0 0 0;
+		background:coral;
+		transform:rotate(0deg);
+	}
+	25% {
+		border-radius:50% 0 0 0;
+		background:darksalmon;
+		transform:rotate(45deg);
+	}
+	50% {
+		border-radius:50% 50% 0 0;
+		background:indianred;
+		transform:rotate(90deg);
+	}
+	75% {
+		border-radius:50% 50% 50% 0;
+		background:lightcoral;
+		transform:rotate(135deg);
+	}
+	100% {
+		border-radius:50% 50% 50% 50%;
+		background:darksalmon;
+		transform:rotate(180deg);
+	}
+}
+
+.square-to-circle {
+	width: 200px;
+	height: 200px;
+	background-color: coral;
+	outline: 1px solid transparent;
+	animation: 	square-to-circle 2s 0.5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+} 
+*/
+
+@keyframes heartbeats {
+	0% {
+		transform:none;
+	}
+	25% {
+		transform:scale(1.25, 0.75);
+	}
+	50% {
+		transform:scale(0.75, 1.25);
+	}
+	75% {
+		transform:scale(1.15, 0.85);
+	}
+	100% {
+		transform:none;
+	}
+}
+
+.heartbeats {
+	height: 75px;
+	width: 75px;
+	background-color: #EEEEEE;
+	border-radius: 50%;
+	display: inline-block;
+	animation: heartbeats 0.7s 0s infinite linear alternate;
+}
